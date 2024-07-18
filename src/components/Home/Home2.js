@@ -1,5 +1,7 @@
+// src/components/Home/Home2.js
+
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
@@ -8,11 +10,21 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
+        <Row className="text-center mb-4">
+          <Col>
+            <Link to="/register">
+              <Button variant="primary" size="lg">
+                Register for DevConvergence
+              </Button>
+            </Link>
+          </Col>
+        </Row>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
@@ -67,7 +79,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                href="https://github.com/austin-elongo"
+                  href="https://github.com/austin-elongo"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -112,4 +124,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
