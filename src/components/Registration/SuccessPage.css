@@ -1,0 +1,25 @@
+/* src/components/Registration/SuccessPage.css */
+
+.success-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .success-page h2 {
+    color: green;
+  }
+  
+  .whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128c7e;
+  }
+  
