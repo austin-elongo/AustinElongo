@@ -31,7 +31,7 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="registration-form">
+    <div className="registration-form" style={{ paddingTop: '50px' }}>
       <h2>DevConvergence Registration</h2>
       <form onSubmit={handleSubmit}>
         <label>

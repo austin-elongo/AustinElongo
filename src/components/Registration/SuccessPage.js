@@ -6,7 +6,7 @@ import './SuccessPage.css';
 
 const SuccessPage = () => {
   return (
-    <div className="success-page">
+    <div className="success-page" style={{ paddingTop: '50px' }}>
       <h2>Registration Successful!</h2>
       <p>
         You will be required to own a usable computer device, installed dev dependencies (if unsure, guidance for installation will be provided personally to you), and a fee of $83 or FCFA 50,000. Please visit the WhatsApp number for further details if needed.
