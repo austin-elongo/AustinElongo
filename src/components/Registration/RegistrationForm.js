@@ -10,8 +10,6 @@ const RegistrationForm = () => {
     email: ''
   });
 
-  const [message, setMessage] = useState('');
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -19,12 +17,10 @@ const RegistrationForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://your-vercel-project-name.vercel.app/api/registration', formData);
+      const response = await axios.post('/api/registration', formData);
       console.log(response.data);
-      setMessage('Registration successful!');
     } catch (error) {
       console.error('Error registering user', error);
-      setMessage('Error registering user');
     }
   };
 
@@ -50,7 +46,6 @@ const RegistrationForm = () => {
         </label>
         <button type="submit">Register</button>
       </form>
-      {message && <p>{message}</p>}
     </div>
   );
 };
