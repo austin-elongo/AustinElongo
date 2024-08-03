@@ -80,10 +80,9 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink=""
+              title="Austins Personals"
+              description="My personal website built with the MERN Stack. It uses React.js, Css, html, Ts and Versel for deployement. It is designed with an ellegant techy purple which is visualy comfortable and black for optimization purposes "
+              ghLink="https://github.com/austin-elongo/AustinElongo"
               // demoLink=""      <--------Please include a demo link here 
             />
           </Col>
