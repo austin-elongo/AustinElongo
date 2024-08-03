@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import portfolioDemo from "../../Assets/Projects/portfolioDemo.jpg";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
@@ -26,8 +26,8 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink=""
+              description="A mobile and web platform for the retail of all footwear products, for Zaps shoes. Built with MERN stack forprioritizing efficient and optimized for user experience and usability. "
+              ghLink="https://github.com/austin-elongo/zap-nteng"
               demoLink=""
             />
           </Col>
@@ -78,7 +78,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={portfolioDemo}
               isBlog={false}
               title="Austins Personals"
               description="My personal website built with the MERN Stack. It uses React.js, Css, html, Ts and Versel for deployement. It is designed with an ellegant techy purple which is visualy comfortable and black for optimization purposes "
