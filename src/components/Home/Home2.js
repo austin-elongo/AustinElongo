@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import myImg from "../../Assets/boycartoon.png";
+import myImg from "../../Assets/secondimg.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,

@@ -25,8 +25,8 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="A mobile and web platform for the retail of all footwear products, for Zaps shoes. Built with MERN stack forprioritizing efficient and optimized for user experience and usability. "
+              title="Zap Nteng"
+              description="A mobile and web platform for the retail of all footwear products, for Zaps shoes. Built with React jsx. Prioritizing efficiency and optimized for user experience and usability. "
               ghLink="https://github.com/austin-elongo/zap-nteng"
               demoLink=""
             />
