@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import portfolioDemo from "../../Assets/Projects/portfolioDemo.jpg";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import zapntengDemo from "../../Assets/Projects/zapntengDemo.jpg";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
@@ -23,10 +23,10 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={zapntengDemo}
               isBlog={false}
               title="Zap Nteng"
-              description="A mobile and web platform for the retail of all footwear products, for Zaps shoes. Built with React jsx. Prioritizing efficiency and optimized for user experience and usability. "
+              description="A mobile and web platform for the retail of all footwear products, for Zaps shoes. Built with React.js. Prioritizing efficiency and optimized for user experience and usability. "
               ghLink="https://github.com/austin-elongo/zap-nteng"
               demoLink=""
             />
