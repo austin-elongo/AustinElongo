@@ -7,7 +7,7 @@ import portfolioDemo from "../../Assets/Projects/portfolioDemo.jpg";
 import editor from "../../Assets/Projects/codeEditor.png";
 import zapntengDemo from "../../Assets/Projects/zapntengDemo.jpg";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import TPRDemo from "../../Assets/Projects/TPRDemo.jpg";
 
 function Projects() {
   return (
@@ -34,12 +34,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={TPRDemo}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink=""
-              demoLink=""
+              title="Triangle Party Rentals USA"
+              description="Build with Shopify for TPC USA. Implementing intergrated secure payments, secure bookings, secure chat, quick favouriting, Gallery and much more."
+              
+              demoLink="https://www.triangle-party-rentals.com/"
             />
           </Col>
 
