@@ -72,6 +72,7 @@ function Projects() {
               title="Pidgin Recognition AI Project"
               description="Cloud-based NLP framework that enhances the context-awareness and intent recognition capabilities of voice assistants in the African e-commerce sector. A project build with Python, Jupiter Notebook, Js, Pandas, Numpy, Aws Lamda, PyTorch, Llama4 finetunning and Google colab "
               ghLink="https://github.com/austin-elongo/Pidgin-Recognition-Ai"
+              docLink="https://docs.google.com/document/d/1dxEKVdaeDyb5dZcRR5MjfJDc7DxYMV4M/edit?usp=sharing&ouid=103254439432642910469&rtpof=true&sd=true"
               // demoLink="" <--------Please include a demo link here
             />
           </Col>
