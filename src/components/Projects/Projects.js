@@ -36,9 +36,9 @@ function Projects() {
             <ProjectCard
               imgPath={TPRDemo}
               isBlog={false}
-              title="Triangle Party Rentals USA"
-              description="Build with Shopify for TPC USA. Implementing intergrated secure payments, secure bookings, secure chat, quick favouriting, Gallery and much more."
-              
+              title="TPR USA"
+              description="Build with Shopify for Triangle Party Rentals USA. Implementing intergrated secure payments, secure bookings, secure chat, quick favouriting, Gallery and much more."
+              //ghLink=""
               demoLink="https://www.triangle-party-rentals.com/"
             />
           </Col>
@@ -69,9 +69,9 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink=""
+              title="Pidgin Recognition AI Project"
+              description="Cloud-based NLP framework that enhances the context-awareness and intent recognition capabilities of voice assistants in the African e-commerce sector. A project build with Python, Jupiter Notebook, Js, Pandas, Numpy, Aws Lamda, PyTorch, Llama4 finetunning and Google colab "
+              ghLink="https://github.com/austin-elongo/Pidgin-Recognition-Ai"
               // demoLink="" <--------Please include a demo link here
             />
           </Col>
@@ -81,7 +81,7 @@ function Projects() {
               imgPath={portfolioDemo}
               isBlog={false}
               title="Austins Personals"
-              description="My personal website built with the MERN Stack. It uses React.js, Css, html, Ts and Versel for deployement. It is designed with an ellegant techy purple which is visualy comfortable and black for optimization purposes "
+              description="My personal website built with MERN Stack. It uses React.js, Css, html, Ts and Versel for deployement. It is designed with an ellegant techy purple which is visualy comfortable and black for optimization purposes "
               ghLink="https://github.com/austin-elongo/AustinElongo"
               // demoLink=""      <--------Please include a demo link here 
             />
