@@ -36,13 +36,13 @@ function Home2() {
               <br />
               <br />I am fluent in 
               <i>
-                <b className="purple">Flutter and Dart, Java, C++, Javascript and Go. </b>
+                <b className="purple">Javascript and React, Java, C++, Flutter and Dart. </b>
               </i>
               <br />
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products, Mobile Apps with Flutter Technologies </b> and
+                <b className="purple">Web Technologies and Products with Js, Mobile Apps with Flutter Technologies </b> and
                 also in areas related to{" "}
                 <b className="purple">
                   Blockchain and AI
@@ -50,17 +50,17 @@ function Home2() {
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              Whenever neccessary, I also apply my passion for developing products
+              with <b className="purple">Other Technologies</b> and alot of 
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  flexibility 
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; depending on the team needs and company
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> Requirements</b>
               </i>
             </p>
           </Col>
