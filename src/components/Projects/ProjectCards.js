@@ -15,19 +15,22 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
         {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
+          <Button
+            variant="primary"
+            href={props.ghLink}
+            target="_blank"
+            style={{ marginRight: "10px", marginBottom: "10px" }}
+          >
             <BsGithub /> &nbsp;
             {props.isBlog ? "Blog" : "GitHub"}
           </Button>
         )}
-        {"\n"}
-        {"\n"}
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
             href={props.demoLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            style={{ marginRight: "10px", marginBottom: "10px" }}
           >
             <CgWebsite /> &nbsp;
             {"Live"}
@@ -38,10 +41,10 @@ function ProjectCards(props) {
             variant="primary"
             href={props.docLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            style={{ marginBottom: "10px" }}
           >
             <FaBook /> &nbsp;
-            {"DDS and SRS Documentation"}
+            {"Documentation"}
           </Button>
         )}
       </Card.Body>
