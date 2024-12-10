@@ -865,3 +865,147 @@ button[type="submit"]:hover,
     min-width: 250px !important;
   }
 }
+
+/* Blog Section */
+.blog-card {
+  padding: 20px !important;
+  height: 100% !important;
+}
+
+.blog-card-view {
+  background-color: transparent !important;
+  box-shadow: 0 3px 3px 2px rgba(255, 123, 0, 0.2) !important;
+  color: white !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.blog-card-view:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0 3px 3px 2px rgba(255, 123, 0, 0.3) !important;
+}
+
+.blog-card-view .card-title {
+  color: #ff7b00 !important;
+  font-size: 1.5em !important;
+  margin-bottom: 15px !important;
+}
+
+.blog-meta {
+  color: #c5c5c5;
+  margin: 15px 0;
+  font-size: 0.9em;
+}
+
+.blog-meta span {
+  margin: 0 8px;
+}
+
+.blog-card-view .btn {
+  margin-top: 15px;
+}
+
+/* Blog Card Images */
+.blog-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+}
+
+.blog-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-card-view:hover .blog-card-image {
+  transform: scale(1.05);
+}
+
+/* Blog Tags */
+.blog-tags {
+  margin-bottom: 15px;
+}
+
+.blog-tag {
+  background: rgba(255, 123, 0, 0.2);
+  color: #ff7b00;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+/* Blog Post Page */
+.blog-post-section {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.blog-hero-section {
+  margin-bottom: 40px;
+}
+
+.blog-hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-header h1 {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.blog-content {
+  color: white;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.blog-section {
+  margin-bottom: 40px;
+}
+
+.blog-section-image {
+  margin: 30px 0;
+}
+
+.blog-section-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-caption {
+  text-align: center;
+  color: #888;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-hero-image {
+    height: 250px;
+  }
+
+  .blog-header h1 {
+    font-size: 2em;
+  }
+
+  .blog-content {
+    font-size: 1em;
+  }
+}

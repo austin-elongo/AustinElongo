@@ -27,6 +27,16 @@ const registrationSchema = new mongoose.Schema({
 
 const Registration = mongoose.model('Registration', registrationSchema);
 
+// Add new schema for service requests
+const serviceRequestSchema = new mongoose.Schema({
+  service: String,
+  tier: String,
+  phoneNumber: String,
+  timestamp: Date
+});
+
+const ServiceRequest = mongoose.model('ServiceRequest', serviceRequestSchema);
+
 // Routes
 app.post('/api/registration', async (req, res) => {
   try {
@@ -35,6 +45,20 @@ app.post('/api/registration', async (req, res) => {
     res.status(201).json(newRegistration);
   } catch (err) {
     res.status(400).json({ message: 'Error registering user', error: err });
+  }
+});
+
+// Add new route for service requests
+app.post('/api/service-request', async (req, res) => {
+  try {
+    const newServiceRequest = new ServiceRequest(req.body);
+    await newServiceRequest.save();
+    
+    // Here you could add notification logic (email, SMS, etc.)
+    
+    res.status(201).json(newServiceRequest);
+  } catch (err) {
+    res.status(400).json({ message: 'Error processing service request', error: err });
   }
 });
 
