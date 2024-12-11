@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Particle from "../Particle";
 import { useNavigate } from 'react-router-dom';
 import { servicesData } from './ServicesData';
+import axios from 'axios';
 import './Services.css';
 
 const Services = () => {
@@ -12,6 +13,8 @@ const Services = () => {
   const [selectedTier, setSelectedTier] = useState(null);
   const [phoneNumber, setPhoneNumber] = useState('');
   const [showPhoneModal, setShowPhoneModal] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,24 +24,41 @@ const Services = () => {
     setSelectedService(service);
     setSelectedTier(tier);
     setShowPhoneModal(true);
+    setError(null);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setError(null);
     
     const serviceRequest = {
       service: selectedService.title,
       tier: selectedTier,
       phoneNumber: phoneNumber,
-      timestamp: new Date().toISOString()
     };
 
-    // Redirect to contact page
-    navigate('/contact', { 
-      state: { 
-        serviceRequest: serviceRequest 
+    try {
+      // Send request to your backend
+      const response = await axios.post('/api/service-request', serviceRequest);
+      
+      if (response.status === 201) {
+        // Navigate to contact page with success message
+        navigate('/contact', { 
+          state: { 
+            serviceRequest: {
+              ...serviceRequest,
+              requestId: response.data.requestId
+            }
+          }
+        });
       }
-    });
+    } catch (err) {
+      setError('Failed to submit request. Please try again.');
+      console.error('Error submitting service request:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -106,6 +126,7 @@ const Services = () => {
         <div className="phone-modal" role="dialog" aria-modal="true">
           <div className="modal-content">
             <h3>Enter Your Phone Number</h3>
+            {error && <p className="error-message">{error}</p>}
             <form onSubmit={handleSubmit}>
               <input
                 type="tel"
@@ -115,8 +136,14 @@ const Services = () => {
                 required
                 aria-label="Phone number"
                 pattern="[0-9]+"
+                disabled={isSubmitting}
               />
-              <button type="submit">Continue</button>
+              <button 
+                type="submit" 
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Submitting...' : 'Continue'}
+              </button>
             </form>
           </div>
         </div>

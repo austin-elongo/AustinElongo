@@ -95,7 +95,7 @@
 }
 
 .select-button[aria-label*="Black Tier"] {
-  background: #000000;
+  background: #2d2d2d;
   color: white;
   border: 1px solid #404040;
 }
@@ -146,4 +146,73 @@
 
 .service-card {
   animation: fadeIn 0.5s ease-in;
+}
+
+.phone-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #ff7b00;
+}
+
+.modal-content h3 {
+  color: #ff7b00;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  color: white;
+}
+
+.modal-content input:focus {
+  border-color: #ff7b00;
+  outline: none;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #ff7b00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-content button:hover:not(:disabled) {
+  background: #ff9f40;
+}
+
+.modal-content button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff4444;
+  margin-bottom: 1rem;
+  text-align: center;
 } 
