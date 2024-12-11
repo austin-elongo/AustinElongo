@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import './Contact.css';
 
 function Contact() {
   const location = useLocation();
-  const navigate = useNavigate();
   const serviceRequest = location.state?.serviceRequest;
 
   useEffect(() => {

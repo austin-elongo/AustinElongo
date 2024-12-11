@@ -40,7 +40,10 @@ const Services = () => {
 
     try {
       // Send request to your backend
-      const response = await axios.post('/api/service-request', serviceRequest);
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_URL}/service-request`, 
+        serviceRequest
+      );
       
       if (response.status === 201) {
         // Navigate to contact page with success message
