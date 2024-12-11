@@ -15,7 +15,6 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import { RiServiceLine } from "react-icons/ri";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -95,21 +94,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/blog"
-                onClick={() => updateExpanded(false)}
+                href="" //Blogs page needed
+                target="_blank"
+                rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blog
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/services"
-                onClick={() => updateExpanded(false)}
-              >
-                <RiServiceLine style={{ marginBottom: "2px" }} /> Services
+                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
             </Nav.Item>
 
